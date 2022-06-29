@@ -130,7 +130,7 @@ public class RnKeyboardModule extends ReactContextBaseJavaModule {
       try {
         final Activity activity = getCurrentActivity();
         final ReactEditText input = (ReactEditText) getViewById(inputId);
-
+        
         if (input == null) { promise.reject("Error", "Cannot attach"); return; };
 
         View _keyboard = (View) this.keyboardList.get(RnKeyboardModule.keyboardType);
